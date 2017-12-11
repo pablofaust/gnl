@@ -6,7 +6,7 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 14:31:26 by pfaust            #+#    #+#             */
-/*   Updated: 2017/12/07 16:56:25 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/12/11 11:13:06 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,17 @@ int		main(int ac, char **av)
 		return (0);
 	fd = open(av[1], O_RDONLY);
 	get_next_line(fd, &line);
+	dprintf(1, "%s\n", line);
+	get_next_line(fd, &line);
+	dprintf(1, "%s\n", line);
+	get_next_line(fd, &line);
+	dprintf(1, "%s\n", line);
+	get_next_line(fd, &line);
+	dprintf(1, "%s\n", line);
+	get_next_line(fd, &line);
+	dprintf(1, "%s\n", line);
+	get_next_line(fd, &line);
+	dprintf(1, "%s\n", line);
 	close(fd);
 	return (0);
 }

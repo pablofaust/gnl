@@ -1,2 +1,73 @@
-avant if : 
-je suis la
+
+
+---------DEBUT DE NOUVEAU GET NEXT LINE ------------
+
+il n'y a pas de saut a la ligne dans le maillon
+line =  + hoho = hoho
+buf = hoho
+ha
+MAJ du maillon : ha
+
+hoho
+
+
+---------DEBUT DE NOUVEAU GET NEXT LINE ------------
+
+str static : ha
+il n'y a pas de saut a la ligne dans le maillon
+line = ha + ha = haha
+buf = ha
+hihi
+MAJ du maillon : hihi
+
+haha
+
+
+---------DEBUT DE NOUVEAU GET NEXT LINE ------------
+
+str static : hihi
+il n'y a pas de saut a la ligne dans le maillon
+line = hihi +  = hihi
+buf = 
+huhu
+
+MAJ du maillon : huhu
+
+
+hihi
+
+
+---------DEBUT DE NOUVEAU GET NEXT LINE ------------
+
+str static : huhu
+
+il y a un maillon avec saut a la ligne
+line : huhu
+nouveau maillon : 
+
+
+huhu
+
+
+---------DEBUT DE NOUVEAU GET NEXT LINE ------------
+
+str static : 
+
+il y a un maillon avec saut a la ligne
+line : 
+nouveau maillon : 
+
+
+
+
+
+---------DEBUT DE NOUVEAU GET NEXT LINE ------------
+
+str static : 
+
+il y a un maillon avec saut a la ligne
+line : 
+nouveau maillon : 
+
+
+
