@@ -6,7 +6,7 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 14:23:24 by pfaust            #+#    #+#             */
-/*   Updated: 2017/12/12 14:25:25 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/12/12 10:01:10 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ int		ft_read_file(const int fd, char **line, t_stock *elem)
 			tmp = ft_strsub(buf, 0, (eol- buf));
 			*line = ft_strjoin(elem->str, tmp);
 			elem->str = ft_strsub(buf, (eol - buf + 1), (ft_strlen(eol) - 1));
-			ft_putendl(elem->str);
 			return (1);
 		}
 		else
@@ -54,8 +53,6 @@ int		get_next_line(const int fd, char **line)
 	t_stock				*elem;
 	char				*eol;
 
-	if (fd == 0)
-		return (-1);
 	if (!list)
 		list = ft_newstock(fd);
 	elem = list;
@@ -66,16 +63,13 @@ int		get_next_line(const int fd, char **line)
 		elem->next = ft_newstock(fd);
 		elem = elem->next;
 	}
-
 	if ((eol = ft_strchr(elem->str, '\n')))
 	{
-		if (elem->str[ft_strlen(elem->str)] == '\0')
-			return (0);
 		*line = ft_strsub(elem->str, 0, (eol - elem->str));
 		elem->str = ft_strsub(elem->str, (eol - elem->str), ft_strlen(eol));
 		return (1);
 	}
 	else
 		ft_read_file(fd, line, elem);
-	return (1);
+	return (0);
 }
