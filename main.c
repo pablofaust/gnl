@@ -6,7 +6,7 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 14:31:26 by pfaust            #+#    #+#             */
-/*   Updated: 2017/12/12 14:08:58 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/12/12 16:01:33 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,9 @@ int		main(int ac, char **av)
 	fd = open(av[1], O_RDONLY);
 	fd2 = open(av[2], O_RDONLY);
 	while (get_next_line(fd, &line) > 0)
-		dprintf(1, "%s\n", line);
+		dprintf(1, "%s\n\n", line);
+	while (get_next_line(fd2, &line) > 0)
+		ft_putendl(line);
 	close(fd);
 	close(fd2);
 	return (0);
