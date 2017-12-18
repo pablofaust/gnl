@@ -6,7 +6,7 @@
 /*   By: pfaust <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 14:27:02 by pfaust            #+#    #+#             */
-/*   Updated: 2017/12/12 16:06:21 by pfaust           ###   ########.fr       */
+/*   Updated: 2017/12/18 11:15:42 by pfaust           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #include <unistd.h>
 // A SUPPRIMER
 #include <stdio.h>
-#define BUFF_SIZE 9999 
+#define BUFF_SIZE 8 
 typedef struct				s_stock
 {
 	int						fd;
